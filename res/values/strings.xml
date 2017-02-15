@@ -37,4 +37,10 @@
     <string name="notification_settings_title">Notification Settings</string>
     <string name="led_settings_title">Led Settings</string>
 
+    
+    <string name="lock_screen_title">LockScreen Settings</string>
+    <string name="recents_title">Recents Settings</string>
+    <string name="status_bar_title">StatusBar Settings</string>
+
+
 </resources>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.blissroms.blissify.preference;
+package com.infinitiveos.theinfinitedimension.preference;
 
 import android.content.Context;
 import android.support.v14.preference.SwitchPreference;

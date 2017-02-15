@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.infinitiveos.theinfinitedimension.statusbar;
+package com.infinitiveos.theinfinitedimension.notification;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -32,20 +32,18 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.infinitiveos.theinfinitedimension.PagerSlidingTabStrip;
-import com.infinitiveos.theinfinitedimension.statusbar.tabs.ClockSettings;
-import com.infinitiveos.theinfinitedimension.statusbar.tabs.StatusbarGestures;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
+import com.infinitiveos.theinfinitedimension.notification.tabs.LedSettings;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class StatusBarSettings extends SettingsPreferenceFragment {
+public class NotificationSettings extends SettingsPreferenceFragment {
 
     ViewPager mViewPager;
     String titleString[];
@@ -93,8 +91,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-	    frags[0] = new ClockSettings();
-	    frags[1] = new StatusbarGestures();
+	    frags[0] = new LedSettings();
         }
 
         @Override
@@ -116,8 +113,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-		    getString(R.string.clock_tab_title),
-		    getString(R.string.statusbar_gestures_title)};
+		    getString(R.string.led_settings_title)};
         return titleString;
     }
 

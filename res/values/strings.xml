@@ -18,4 +18,9 @@
     <!-- The Infinite Dimension -->
     <string name="theinfinitedimension_title">The Infinite Dimension</string>
 
+    <!-- The Infinite Dimension Categories -->
+
+    <!-- Status bar -->
+    <string name="statusbar_settings_title">StatusBar Settings</string>
+    <string name="clock_tab_title">Clock</string>
 </resources>
